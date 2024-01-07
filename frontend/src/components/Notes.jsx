@@ -6,15 +6,25 @@ function Notes() {
         content: ''
     }])
 
+    // localhost
+    // useEffect(() => {
+    //     fetch("http://localhost:3001/notes").then(res => {
+    //         if (res.ok) {
+    //             return res.json()
+    //         }
+    //     }).then(jsonRes => setNotes(jsonRes))
+
+    // })
+
+    //vercel
     useEffect(() => {
-        fetch("http://localhost:3001/notes").then(res => {
+        fetch("https://note-taker-server.vercel.app/").then(res => {
             if (res.ok) {
                 return res.json()
             }
         }).then(jsonRes => setNotes(jsonRes))
 
     })
-
 
     return (
         <div className="container">
