@@ -2,4 +2,4 @@
 
 # Description
 
-A simple Note Taker App built with React, Vite, and Javascript.
+A simple Note Taker App built with React, Vite, and Javascript. Something.
