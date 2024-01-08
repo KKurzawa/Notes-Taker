@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001"
 
 function Notes() {
     const [notes, setNotes] = useState([{
@@ -18,7 +19,7 @@ function Notes() {
 
     //vercel
     useEffect(() => {
-        fetch("https://note-taker-server-2tu4.onrender.com").then(res => {
+        fetch(`${apiBaseUrl}/notes`).then(res => {
             if (res.ok) {
                 return res.json()
             }
