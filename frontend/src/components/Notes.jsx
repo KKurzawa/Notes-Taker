@@ -25,7 +25,7 @@ function Notes() {
             }
         }).then(jsonRes => setNotes(jsonRes))
 
-    })
+    }, [])
 
     return (
         <div className="container">
