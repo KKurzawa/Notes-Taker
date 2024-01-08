@@ -18,7 +18,7 @@ function Notes() {
 
     //vercel
     useEffect(() => {
-        fetch("https://note-taker-server.vercel.app/").then(res => {
+        fetch("https://note-taker-server-2tu4.onrender.com").then(res => {
             if (res.ok) {
                 return res.json()
             }
